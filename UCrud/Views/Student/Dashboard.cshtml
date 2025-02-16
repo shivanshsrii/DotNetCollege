@@ -1,0 +1,42 @@
+﻿<h2>Student Dashboard</h2>
+
+<!-- Student Details -->
+<div>
+    <p><strong>Name:</strong> @Model.Name</p>
+    <p><strong>Course:</strong> @Model.Course</p>
+</div>
+
+<!-- ✅ Scores Section with ID -->
+<h3 id="scores-section">My Semester Scores</h3>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Semester</th>
+            <th>Subject 1</th>
+            <th>Subject 2</th>
+            <th>Subject 3</th>
+            <th>Subject 4</th>
+            <th>Subject 5</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (int i = 1; i <= 8; i++)
+        {
+            <tr>
+                <td>Semester @i</td>
+                <td>@Model.GetSubjectMarks(i, 1)</td>
+                <td>@Model.GetSubjectMarks(i, 2)</td>
+                <td>@Model.GetSubjectMarks(i, 3)</td>
+                <td>@Model.GetSubjectMarks(i, 4)</td>
+                <td>@Model.GetSubjectMarks(i, 5)</td>
+                <td>@Model.GetTotalSemesterMarks(i)</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<!-- ✅ Display Total Marks & Percentage -->
+<h4>Total Marks: @Model.GetTotalMarks()</h4>
+<h4>Percentage: @Model.GetPercentage()%</h4>

@@ -1,0 +1,70 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<h1 class="text-primary text-center">@ViewData["Title"]</h1>
+
+<div class="container mt-4">
+    <!-- About the Website -->
+    <div class="card mb-3 shadow-sm">
+        <div class="card-body">
+            <h2 class="card-title text-success">About PublicDotNet College</h2>
+            <p class="card-text">
+                <strong>PublicDotNet College</strong> is a modern educational platform developed in <strong>2025</strong>
+                to provide students with access to **high-quality technology education**.
+                It enables administrators to manage student records and allows students to check their semester results securely.
+            </p>
+        </div>
+    </div>
+
+    <!-- Privacy Policy -->
+    <div class="card mb-3 shadow-sm">
+        <div class="card-body">
+            <h2 class="card-title text-info">Privacy Policy</h2>
+            <p class="card-text">
+                We value your **privacy** and ensure that your personal data, such as your **name, email, phone number, and academic details**,
+                will be **strictly used for educational purposes**. Your information will not be shared with third parties
+                without your explicit consent.
+            </p>
+            <p class="card-text">
+                By using this website, you agree to our **data collection and security policies**
+                aimed at providing a safe and personalized experience.
+            </p>
+        </div>
+    </div>
+
+    <!-- Terms & Conditions -->
+    <div class="card mb-3 shadow-sm">
+        <div class="card-body">
+            <h2 class="card-title text-danger">Terms & Conditions</h2>
+            <ul class="list-group">
+                <li class="list-group-item">✔ All users must register with **valid credentials**.</li>
+                <li class="list-group-item">✔ **Unauthorized access** to student data is strictly prohibited.</li>
+                <li class="list-group-item">✔ Users are responsible for keeping their **login credentials secure**.</li>
+                <li class="list-group-item">✔ The college reserves the right to **modify website policies** at any time.</li>
+                <li class="list-group-item">✔ Misuse of the website **may result in legal action**.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Copyright Notice -->
+    <div class="card mb-3 shadow-sm">
+        <div class="card-body text-center">
+            <h2 class="card-title text-warning">Copyright Information</h2>
+            <p class="card-text">
+                &copy; 2025 <strong>PublicDotNet College</strong>. All rights reserved.
+                Developed by <strong>Shivansh Srivastava</strong>.
+            </p>
+        </div>
+    </div>
+
+    <!-- Accept Button -->
+    <div class="text-center mt-4">
+        <button class="btn btn-primary px-4 py-2" onclick="acceptTerms()">Accept Terms</button>
+    </div>
+</div>
+
+<script>
+    function acceptTerms() {
+        alert("You have accepted the Privacy Policy & Terms.");
+    }
+</script>
